@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    = stylesheet_link_tag 'cabinet'
+    = javascript_include_tag 'cabinet'
+  body
+    #header
+      #first_block
+        .content
+          .logo_cont.inl-bl
+            img src='/images/elis_logo.png'
+            .we_know мы знем где остановиться
+          .title_cont.inl-bl Посуточная аренда жилья во всех городах России
+          .exit_cont.inl-bl
+            a href='#' Выход из личного кабинета
+      #second_block
+        .content
+          i.arrow
+          a.main href='#' Главная
+          span.line |
+          a.cabinet href='#' Личный кабинет
+      #third_block
+        .content
+          span.name Виталий Викторович Пучкин
+      .content
+        #sidebar
+          .menu_block
+            span.title Мое
+            ul.menu
+              li
+                i.dot
+                a href='#' Профилиь реквизиты
+          .menu_block
+            span.title Объекты
+            ul.menu
+              li
+                i.dot
+                a href='#' Мои объекты
+            ul.menu
+              li
+                i.dot
+                a href='#' Календарь бронирования
+                span.number 12
+                i.plus
+
+    #content
+    #footer

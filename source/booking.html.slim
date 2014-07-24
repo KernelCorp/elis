@@ -2,7 +2,20 @@
   h1 Календарь бронирования
   .object
     span Календарь объекта
-    select.apartment
-      option 2 комнатная квартира ул. Ленина 21 д. 123
-      option 2 комнатная квартира ул. Ленина 21 д. 124
-      option 2 комнатная квартира ул. Ленина 21 д. 125
+    .apartment_wrap
+      .fake
+      select#apartment
+        option 2 комнатная квартира ул. Ленина 21 д. 123
+        option 2 комнатная квартира ул. Ленина 21 д. 124
+        option 2 комнатная квартира ул. Ленина 21 д. 125
+    #calendar_wrap
+      .period_prev.per
+        a href='#' Январь - Апрель 2014
+      .period_current.per
+        span Май - Август 2014
+      .period_next.per
+        a href='#' Сентябрь - Декабрь 2014
+      .calendar_block
+        span.month
+javascript:
+  $('select#apartment').select2();

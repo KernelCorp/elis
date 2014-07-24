@@ -1,0 +1,30 @@
+#login-content
+  #form-container
+    #form-title
+      Вход в личный кабинет
+    #form-left.inl-bl>
+      %form
+        %p
+          Логин (e-mail)
+        %input{name: "email", type: "text", label: "asdf"}
+        %p
+          Пароль:
+        %input{name: "password", type: "text"}
+        %button{type: 'submit'}
+          Войти
+    #form-right.inl-bl>
+      %p
+        Вы ещё не зарегистрировались?
+        %br
+        Добро пожаловать!
+        %a{href: '#'}
+          Пройдите регистрацию.
+      %p
+        Не помните пароль или не получается войти?
+        %br
+        Вы всегда можете
+        %a{href: '#'}
+          восстановить пароль.
+
+
+  %img{src: '/images/banner_1.jpg'}

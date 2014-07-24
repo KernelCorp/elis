@@ -18,3 +18,5 @@ gem 'slim-rails'
 gem 'sass-rails'
 
 gem 'coffee-rails'
+
+gem 'compass-rails'

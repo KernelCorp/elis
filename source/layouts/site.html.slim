@@ -1,75 +1,76 @@
 doctype html
-  html
-    head
-      = stylesheet_link_tag 'site'
-      = javascript_include_tag 'site'
-    body
-      #header
-        #first_block
-          .content
+html
+  head
+    link rel='stylesheet' type='text/css' href='stylesheets/site.css'
+    meta http-equiv="content-type" content="text/html" charset="utf-8"
+    script type='text/javascript' src='javascripts/site.js'
+  body
+    #header
+      #first_block
+        .content
+          .logo_cont.inl-bl
+            img src='images/elis_logo.png'
+            .we_know мы знаем где остановиться
+          .title_cont.inl-bl Посуточная аренда жилья во всех городах России
+          .exit_cont.inl-bl
+            a.inl-bl href='#' Вход в личный кабинет
+            a.inl-bl href='#' Регистрация
+            p
+              | Валюта
+              select
+                option руб.
+                option евро
+                option $
+      #second_block
+        .content
+          i.arrow
+          a.main href='#' Главная
+          span.line |
+          a.cabinet href='#' Личный кабинет
+
+    #content
+      = yield
+
+    #footer
+      #first_block
+        .content
+          .column.inl-bl.info
+            span.title Информация
+            a href='#' О компании
+            a href='#' Правила сервиса
+            a href='#' Оплата
+            a href='#' Города
+            a href='#' Контакты
+          .column.inl-bl.join
+            span.title Присоединяйтесь
+            a href='#' Вконтакте
+            a href='#' Facebook
+            a href='#' Instagram
+            a href='#' Twitter
+          .column.inl-bl.help
+            span.title Помощь
+            a href='#' Как разместить свое объявление
+            a href='#' Гарантии
+            a href='#' Безопасность сделок
+            a href='#' Использование сайта
+          .column.inl-bl.manage
+            span.title Управление
+            a href='#' Регистрация
+            a href='#' Личный кабинет
+            a href='#' Настройки сайта
+            a href='#' Выбор города
+          .column.inl-bl.contacts
             .logo_cont.inl-bl
-              img src='/images/elis_logo.png'
-              .we_know мы знаем где остановиться
-            .title_cont.inl-bl Посуточная аренда жилья во всех городах России
-            .exit_cont.inl-bl
-              a.inl-bl href='#' Вход в личный кабинет
-              a.inl-bl href='#' Регистрация
-              p
-                | Валюта
-                select
-                  option руб.
-                  option евро
-                  option $
-        #second_block
-          .content
-            i.arrow
-            a.main href='#' Главная
-            span.line |
-            a.cabinet href='#' Личный кабинет
+              img src='images/elis_logo.png'
+              .we_know мы знем где остановиться
+            a.phone href='tel: 88008889900' 8 (800) 888-99-00
+            span.address Москва
+                         <br>Владимировская 125
+                         <br>Офис 541, 5 этаж
 
-      #content
-        = yield
-
-      #footer
-        #first_block
-          .content
-            .column.inl-bl.info
-              span.title Информация
-              a href='#' О компании
-              a href='#' Правила сервиса
-              a href='#' Оплата
-              a href='#' Города
-              a href='#' Контакты
-            .column.inl-bl.join
-              span.title Присоединяйтесь
-              a href='#' Вконтакте
-              a href='#' Facebook
-              a href='#' Instagram
-              a href='#' Twitter
-            .column.inl-bl.help
-              span.title Помощь
-              a href='#' Как разместить свое объявление
-              a href='#' Гарантии
-              a href='#' Безопасность сделок
-              a href='#' Использование сайта
-            .column.inl-bl.manage
-              span.title Управление
-              a href='#' Регистрация
-              a href='#' Личный кабинет
-              a href='#' Настройки сайта
-              a href='#' Выбор города
-            .column.inl-bl.contacts
-              .logo_cont.inl-bl
-                img src='/images/elis_logo.png'
-                .we_know мы знем где остановиться
-              a.phone href='tel: 88008889900' 8 (800) 888-99-00
-              span.address Москва
-                           <br>Владимировская 125
-                           <br>Офис 541, 5 этаж
-
-        #second_block
-          .content
-            .copyright © Элис 2014.  Сервис по подбору и краткосрочной аренде жилья.
-            .liberty
-              a href='#' Создание сайтов
-              |  - Либерти
+      #second_block
+        .content
+          .copyright © Элис 2014.  Сервис по подбору и краткосрочной аренде жилья.
+          .liberty
+            a href='#' Создание сайтов
+            |  - Либерти

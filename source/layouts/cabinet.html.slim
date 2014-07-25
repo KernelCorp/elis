@@ -1,14 +1,15 @@
 doctype html
 html
   head
-    = stylesheet_link_tag 'cabinet'
-    = javascript_include_tag 'cabinet'
+    link rel='stylesheet' type='text/css' href='stylesheets/cabinet.css'
+    meta http-equiv="content-type" content="text/html" charset="utf-8"
+    script type='text/javascript' src='javascripts/cabinet.js'
   body
     #header
       #first_block
         .content
           .logo_cont.inl-bl
-            img src='/images/elis_logo.png'
+            img src='images/elis_logo.png'
             .we_know мы знем где остановиться
           .title_cont.inl-bl Посуточная аренда жилья во всех городах России
           .exit_cont.inl-bl
@@ -107,7 +108,7 @@ html
             a href='#' Выбор города
           .column.inl-bl.contacts
             .logo_cont.inl-bl
-              img src='/images/elis_logo.png'
+              img src='images/elis_logo.png'
               .we_know мы знем где остановиться
             a.phone href='tel: 88008889900' 8 (800) 888-99-00
             span.address Москва

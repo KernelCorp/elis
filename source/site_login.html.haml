@@ -6,7 +6,7 @@
       %form
         %p
           Логин (e-mail)
-        %input{name: "email", type: "text", label: "asdf"}
+        %input{name: "email", type: "text"}
         %p
           Пароль:
         %input{name: "password", type: "text"}
@@ -23,8 +23,45 @@
         Не помните пароль или не получается войти?
         %br
         Вы всегда можете
-        %a{href: '#'}
+        %a{href: '#', id: 'pwd-recover-button'}
           восстановить пароль.
 
+  #pwd-recover.popup
+    .container
+      .title
+        Восстановление пароля
+      .text
+        Если вы забыли пароль, и никак не получается его вспомнить, мы вам поможем и отправим новый пароль на почту, указанную при регистрации.
+        %br
+        %br
+        Ваш e-mail
+      %input{name: "email", type: "text"}
+      %button{id: 'pwd-recover-submit'}
+        Отправить
+      .close-button
+        %a{href:'#', id: 'pwd-recover-close'}
+          %img{src: '../images/close_button.png'}
 
-  %img{src: 'images/banner_1.jpg'}
+  #pwd-sent.popup
+    .container
+      .title
+        Запрос отправлен
+      .text
+        %p
+          Ожидайте ответа на свой запрос.
+          %br
+          Совсем скоро вы его получите.
+        %p
+          Мы рады, что вы пользуетесь нашим сервисом.
+      .close-button
+        %a{href:'#', id: 'pwd-sent-close'}
+          %img{src: '../images/close_button.png'}
+      .timer
+        #timer-text
+          Уведомление закроется автоматически через
+          %span{id: 'timer'}
+            15
+          секунд
+
+
+  %img{src: '../images/banner_1.jpg'}

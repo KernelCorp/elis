@@ -55,6 +55,7 @@ set :images_dir, 'images'
 
 page 'main_cab.html', layout: :cabinet
 page 'booking.html', layout: :cabinet
+page 'site_login.html', layout: :site
 
 # Build-specific configuration
 configure :build do

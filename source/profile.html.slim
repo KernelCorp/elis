@@ -1,0 +1,42 @@
+.content#profile
+  h1 Профиль
+  p Максимально заполненный профиль арендатора увеличивает доверие к вам и вашему предложению.
+  p В следствии этого растёт и конверсия из "просто интересующихся" в реальных клиентов.
+  form#edit_profile
+    label.name Имя
+    input#name type='text'
+    label.surname Фамилия
+    input#surname type='text'
+    label.patronymic Отчество
+    input#patronymic  type='text'
+    label.phone Телефон
+    input#phone type='text'
+    label.add_phone Дополнительный телефон
+    input#add_phone type='text'
+    label.email E-mail
+    input#email type='text'
+    a.change_password href='#' Изменить пароль
+    input.green_button name='commit' type='submit' value='Сохранить профиль'
+  #photo_wrap
+    img#avatar src='images/avatar.png'
+    br
+    a.add_photo href='#' Добавить фотографию
+    a.update.green_button Пополнить счет
+  h2 Реквизиты
+  p Указав свои реквизиты вы сможете взаимодействовать с нашим сервисом на коммерческой основе.
+  #details
+    .one_detail
+      .num 1
+      a.name href='#' ИП Бурундук С.П.
+      a.delete href='#' Удалить
+    .one_detail
+      .num 2
+      a.name href='#' ИП Бурундук С.П.
+      a.delete href='#' Удалить
+    .one_detail
+      .num 3
+      a.name href='#' ИП Бурундук С.П.
+      a.delete href='#' Удалить
+  javascript:
+    details();
+  a.green_button.add_details href='#' Добавить реквизиты

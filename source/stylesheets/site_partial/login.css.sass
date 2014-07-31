@@ -1,7 +1,22 @@
 #login-content
+  position: relative
   width: 940px
   height: 450px
   margin: 0 auto
+
+  button
+    cursor: pointer
+    float: right
+    border: none
+    outline: none
+    background: #8dc63f
+    color: #ffffff
+  input
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.04) 0%, rgba(255,255,255,0.04) 100%) /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.04)), color-stop(100%,rgba(255,255,255,0.04))) /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.04) 0%,rgba(255,255,255,0.04) 100%) /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.04) 0%,rgba(255,255,255,0.04) 100%) /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.04) 0%,rgba(255,255,255,0.04) 100%) /* IE10+ */
 
   #form-container
     width: 620px
@@ -24,14 +39,8 @@
           height: 30px
           width: 295px
         button
-          cursor: pointer
-          float: right
           width: 83px
           height: 33px
-          border: none
-          outline: none
-          background: #8dc63f
-          color: #ffffff
           margin: 25px 20px 0 0
           border-right: 1px solid #c3e199
 
@@ -43,5 +52,72 @@
         margin: 15px 0
         &:nth-child(2)
           margin-top: 28px
+
+  .popup
+    display: none
+    position: absolute
+    background: white
+    -webkit-box-shadow: 0px -5px 60px 0px rgba(50, 50, 50, 0.23)
+    -moz-box-shadow:    0px -5px 60px 0px rgba(50, 50, 50, 0.23)
+    box-shadow:         0px -5px 60px 0px rgba(50, 50, 50, 0.23)
+    .container
+      position: relative
+      height: 100%
+      width: 100%
+      .title
+        font-size: 20px
+        padding: 30px 26px 15px 30px
+      .close-button
+        position: absolute
+        top: 30px
+        right: 30px
+      .text
+        font-size: 13px
+        line-height: 1.9
+        margin: 0 30px
+
+  #pwd-recover
+    height: 335px
+    width: 330px
+    top: 40px
+    left: 78px
+    .title
+      font-size: 20px
+      padding: 30px 26px 15px 30px
+    .text
+      font-size: 13px
+      line-height: 1.9
+      margin: 0 30px
+    input
+      height: 32px
+      width: 266px
+      margin: 5px 30px 15px 30px
+    button
+      width: 107px
+      height: 33px
+      margin-right: 30px
+
+  #pwd-sent
+    height: 250px
+    width: 330px
+    top: 40px
+    right: 105px
+    p
+      margin: 0
+      &:first-child
+        margin-bottom: 20px
+    .timer
+      position: absolute
+      bottom: 0
+      height: 50px
+      width: 100%
+      background: #f4f4f4
+      #timer-text
+        font-size: 10px
+        padding-top: 20px
+        padding-left: 30px
+        color: #a7a8a7
+        span
+          font-weight: bold
 
 

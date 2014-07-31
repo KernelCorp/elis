@@ -1,0 +1,123 @@
+#registration
+  .header
+    height: 220px
+    position: relative
+    width: 100%
+    .left_fon
+      background: url('../images/registration_welcome_left.jpg') left top repeat-x
+      position: absolute
+      left: 0
+      right: 50%
+      top: 0
+      bottom: 0
+      z-index: 0
+
+    .right_fon
+      background: url('../images/registration_welcome_left.jpg') -10px top repeat-x
+      position: absolute
+      left: 50%
+      right: 0
+      top: 0
+      bottom: 0
+      z-index: 0
+
+    .info_bloc
+      position: relative
+      height: 220px
+      margin: 0 auto
+      width: 940px
+      z-index: 2
+
+      $padding_vert: 30px
+      $padding_hor: 30px
+      .info
+        background-color: rgba(61,52,46, 0.85)
+        color: white
+        font-size: 13px
+        float: left
+        height: 220px - 2 * $padding_vert
+        padding: $padding_vert $padding_hor
+        width: 320px - 2 * $padding_hor
+
+        .h1
+          font-size: 27px
+
+      .welcome
+        background: url('../images/registration_welcome.png') 0 0 no-repeat
+        float: left
+        height: 220px
+        width: 620px
+
+  .container
+    $padding_left: 30px
+    margin: 32px auto
+    padding-left: $padding_left
+    width: 940px - $padding_left
+
+    .form_block
+      display: inline-block
+      margin-right: 20px
+      vertical-align: top
+      width: 590px
+
+      .block_elems
+        margin-bottom: 35px
+
+      input.phone_1
+        display: inline-block
+        width: 35px
+      input.phone_2
+        display: inline-block
+        margin: 0 13px
+        width: 75px
+      input.phone_3
+        display: inline-block
+        width: 132px
+
+      input.user_time
+        display: inline-block
+        margin: 0 13px
+        width: 75px
+
+      input.captcha
+        display: inline-block
+        margin-right: 13px
+        width: 143px
+
+      img.captcha
+        vertical-align: top
+
+      label.agree
+        display: inline-block
+        font-size: 15px
+        line-height: 33px
+        max-width: 410px
+
+      button.submit
+        float: right
+
+
+
+    .reg_right_block
+      display: inline-block
+      vertical-align: top
+      width: 300px
+
+      .elem
+        margin-bottom: 34px
+
+    .h2
+      font-size: 20px
+      margin-bottom: 30px
+
+    $padding: 25px
+    .left_column
+      display: inline-block
+      padding-right: $padding
+      vertical-align: top
+      width: 295px - $padding
+    .right_column
+      display: inline-block
+      padding-left: $padding
+      vertical-align: top
+      width: 295px - $padding

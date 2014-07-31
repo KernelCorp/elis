@@ -1,0 +1,122 @@
+#registration
+  .header
+    .left_fon
+    .info_bloc
+      .info
+        .h1 Регистрация
+        p.text
+          ' Добро пожаловать в сообщество арендаторов и арендодателей.
+          ' Здесь вы можете снять или сдать уютную квартиру, коттедж, и даже дом на колёсах.
+      .welcome &nbsp;
+    .right_fon
+
+  .container
+    .form_block
+      form type='post' class='form'
+
+        .block_elems
+          .h2 Кто вы?
+
+          .left_column
+            .group_elem
+              label for='user_name' Имя
+              .elem
+                input type='text' id='user_name' name='user_name'
+
+            .group_elem
+              label for='user_surname' Фамилия
+              .elem
+                input type='text' id='user_surname' name='user_surname'
+
+          .right_column
+            .group_elem
+              label for='user_doing' Что вы будете делать на сайте
+              .elem
+                select id='user_doing' name='user_doing'
+                  option Хочу снимать жилье
+
+            .group_elem
+              label for='user_patronymic' Отчество
+              .elem
+                input type='text' id='user_patronymic' name='user_patronymic'
+
+        .block_elems
+          .h2 Ваши контактные данные
+
+          .left_column
+            .group_elem
+              label for='user_phone' Телефон
+              .elem
+                input type='text' name='user_phone[]' class='phone_1' id='user_phone' value='+7' maxlength= '2'
+                input type='text' name='user_phone[]' class='phone_2' value='(             )'
+                input type='text' name='user_phone[]' class='phone_3'
+
+            .group_elem
+              label for='user_call_time' Удобное время для зваонка вам
+              .elem
+                ' с
+                input type='text' name='user_call_time[]' class='user_time' id='user_call_time'
+                ' до
+                input type='text' name='user_call_time[]' class='user_time'
+
+          .right_column
+            .group_elem
+              label for='user_country' Страна
+              .elem
+                select id='user_country' name='user_country'
+                  option Россия
+
+            .group_elem
+              label for='user_city' Населенный пункт
+              .elem
+                input type='text' id='user_city' name='user_city'
+        .block_elems
+          .h2 Данные для входа на сайт
+
+          .left_column
+            .group_elem
+              label for='user_email' E-mail (он же ваш логин)
+              .elem
+                input type='text' name='user_email' id='user_email'
+
+            .group_elem
+              label for='user_captcha' Введите символы с кртинки
+              .elem
+                input type='text' name='user_captcha' id='user_captcha' class='captcha'
+                img class='captcha' src='http://placehold.it/114x33&text=3275'
+
+
+          .right_column
+            .group_elem
+              label for='user_country' Пароль
+              .elem
+                input type='text' id='user_country' name='user_country'
+
+            .group_elem
+              label class='error' for='user_city' Пароль не совпал с введенным выше
+              .elem
+                input type='text' id='user_city' name='user_city' class='error'
+
+        .block_elems
+          label class='agree'
+            input type='checkbox' name='user_agree'
+            ' Я согласен с
+            a> href='#' условиями и правилами
+            ' предоставления услуг
+
+          button type='submit' class='submit' Зарегистрироваться
+
+
+    .reg_right_block
+      .elem
+        img src='http://placehold.it/300x300'
+
+      .elem
+        img src='http://placehold.it/300x78'
+
+      .elem
+        img src='http://placehold.it/300x78'
+
+      .elem
+        img src='http://placehold.it/300x78'
+

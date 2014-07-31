@@ -57,6 +57,7 @@ page 'main_cab.html', layout: :cabinet
 page 'booking.html', layout: :cabinet
 page 'site_login.html', layout: :site
 page 'profile.html', layout: :cabinet
+page 'priority.html', layout: :cabinet
 
 # Build-specific configuration
 configure :build do

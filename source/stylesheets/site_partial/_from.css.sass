@@ -1,0 +1,65 @@
+$text-color: #3b3937
+
+form.form
+  font-size: 15px
+  color: $text-color
+
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  select
+    $padding: 7px 5px
+    background: -webkit-linear-gradient(top, #f5f5f5, #fff)
+    box-sizing: border-box
+    border: 1px solid #ccc
+    display: block
+    font-size: 13px
+    height: 33px
+    padding: $padding $padding
+    vertical-align: middle
+    width: 100%
+
+  .group_elem
+    margin-bottom: 18px
+
+    label
+      display: block
+      margin-bottom: 5px
+
+  $error_color: #ec4410
+  .error
+    color: $error_color
+
+  input.error
+    border-color: $error_color
+    color: $text-color
+
+  .submit
+    background-color: #8dc63f
+    color: #fff
+    height: 33px
+    text-align: center
+    width: 172px
+
+
+  .form_block
+    display: inline-block
+    margin-right: 20px
+    vertical-align: top
+    width: 590px
+
+    .block_elems
+      margin-bottom: 35px
+
+
+  $padding: 25px
+  .left_column
+    display: inline-block
+    padding-right: $padding
+    vertical-align: top
+    width: 295px - $padding
+  .right_column
+    display: inline-block
+    padding-left: $padding
+    vertical-align: top
+    width: 295px - $padding
